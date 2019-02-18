@@ -15,11 +15,16 @@ typedef NS_ENUM(NSUInteger, SwitchCase)
     SwitchCaseC,
 };
 
-@interface OCViewController ()
+@interface OCViewController () 
 @property (nonatomic, strong) NSString *str;
 @end
 
 @implementation OCViewController
+
+//-(void)love
+//{
+//    NSLog(@"I ❤️ OC");
+//}
 
 - (void)viewDidLoad
 {
@@ -99,7 +104,16 @@ typedef NS_ENUM(NSUInteger, SwitchCase)
 //
 //    } while ();
     
+    //pk.009_關於Dictionary[Swift]
+//    1. 簡寫改用方括號= =
+//    2. 預設是不能用不同型別的元素, 除非用泛型(用逗號隔開= =)
     NSDictionary *dict = @{@"name":@"OC",@"age":@(18)};
+    
+    
+    //-------------------------
+    //前十題小結
+    //-------------------------
+    
     
 }
 
@@ -115,3 +129,4 @@ typedef NS_ENUM(NSUInteger, SwitchCase)
 //}
 
 @end
+

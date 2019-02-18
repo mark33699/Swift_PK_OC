@@ -132,7 +132,15 @@ class SwiftViewController: UIViewController
 //        5. init規則
 //            i. 只有convenience init 可以摳別的init
 //            ii. 只有designated init 可以摳super的init
-//            iii. required init
+//            iii. required init 一定要實作
+        
+        //pk.011_關於POP[Swift]
+//        1.ptc+ext就可做到繼承, 但又可同時conform多個協定, 達到組織扁平化
+        let mark = Man()
+        mark.love()
+        
+        let ocVC = OCViewController()
+        ocVC.love()
     }
 }
 
@@ -168,7 +176,36 @@ struct JustModel
     }
 }
 
-class MFView: UITableViewCell
+// MARK: - POO
+
+protocol GoodMan
+{
+    func love()
+}
+
+extension GoodMan
+{
+    func love()
+    {
+        print("I ❤️ Swift")
+    }
+}
+
+protocol BadMan
+{
+    func love()
+}
+
+extension BadMan
+{
+    func love()
+    {
+        print("I 🔪 Swift")
+    }
+}
+
+//可以遵從兩個協定, 但如果有同名函數同時被擴展, 就會衝到
+class Man: GoodMan//, BadMan
 {
     
 }
