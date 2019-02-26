@@ -78,7 +78,8 @@ class SwiftViewController: UIViewController
         
         switch caseString
         {
-        case "A", "B":
+        case "A",
+             "B":
             print("我可能是Swift的A")
             print("我可能是Swift的B")
 //            fallthrough
@@ -119,10 +120,13 @@ class SwiftViewController: UIViewController
 //
 //        }while(true)
         
+        
+        
         //pk.009_關於Dictionary[Swift]
 //        1. 簡寫改用方括號= =
 //        2. 預設是不能用不同型別的元素, 除非用泛型(用逗號隔開= =)
-        let dict : Dictionary<String,Any> = ["name":"Swift","age":"18"]
+//        let dict : Dictionary<String,Any> = ["name":"Swift","age":"18"]
+        let dict: [String: Any] = ["name": "Swift","age": "18"]//相較上面, 這是比較快的寫法
         
         //pk.010_關於Class[Swift]
 //        1. 確保所有成員都要被初始化, 不然就強制要有init方法
@@ -139,14 +143,56 @@ class SwiftViewController: UIViewController
         let mark = Man()
         mark.love()
         
-        let ocVC = OCViewController()
-        ocVC.love()
+//        let ocVC = OCViewController()
+//        ocVC.love()
+        
+        let j = JustClass.init()
     }
+}
+
+struct Modify
+{
+    var name: String
+}
+
+struct Engineer
+{
+    let mark: Man
+    func edit()
+    {
+        
+    }
+}
+
+class Boss
+{
+    
+}
+
+enum eee:Error
+{
+    case A,C,E
 }
 
 class JustClass
 {
     var name = ""
+    
+    init()
+    {
+        self.name = "\(9999)"
+        let result = try? doit()
+        print(type(of: result))
+    }
+    
+    func doit() throws
+    {
+        if true
+        {
+            throw eee.A
+        }
+    }
+    
 }
 
 class OtherClass
@@ -176,7 +222,7 @@ struct JustModel
     }
 }
 
-// MARK: - POO
+// MARK: - OPO
 
 protocol GoodMan
 {
@@ -196,16 +242,23 @@ protocol BadMan
     func love()
 }
 
-extension BadMan
-{
-    func love()
-    {
-        print("I 🔪 Swift")
-    }
-}
+//extension BadMan
+//{
+//    func love()
+//    {
+//        print("I 🔪 Swift")
+//    }
+//}
 
 //可以遵從兩個協定, 但如果有同名函數同時被擴展, 就會衝到
-class Man: GoodMan//, BadMan
+class Man: GoodMan, BadMan
 {
-    
+
+}
+
+struct Stack {
+    var items = [Double]()
+    mutating func push(value: Double) {
+        items.append(value)
+    }
 }

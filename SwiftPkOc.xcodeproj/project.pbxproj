@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DD723FB221C94BF00F2AD8A /* SwiftEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD723FA221C94BF00F2AD8A /* SwiftEnum.swift */; };
 		8491B300221A4F900055C3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491B2FF221A4F900055C3D2 /* AppDelegate.swift */; };
 		8491B302221A4F900055C3D2 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491B301221A4F900055C3D2 /* SwiftViewController.swift */; };
 		8491B305221A4F900055C3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8491B303221A4F900055C3D2 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DD723FA221C94BF00F2AD8A /* SwiftEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEnum.swift; sourceTree = "<group>"; };
 		8491B2FC221A4F900055C3D2 /* SwiftPkOc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPkOc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8491B2FF221A4F900055C3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8491B301221A4F900055C3D2 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				8491B308221A4F950055C3D2 /* LaunchScreen.storyboard */,
 				8491B30B221A4F950055C3D2 /* Info.plist */,
 				8491B313221A50790055C3D2 /* SwiftPkOc-Bridging-Header.h */,
+				0DD723FA221C94BF00F2AD8A /* SwiftEnum.swift */,
 			);
 			path = SwiftPkOc;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD723FB221C94BF00F2AD8A /* SwiftEnum.swift in Sources */,
 				8491B302221A4F900055C3D2 /* SwiftViewController.swift in Sources */,
 				8491B300221A4F900055C3D2 /* AppDelegate.swift in Sources */,
 				8491B316221A50790055C3D2 /* OCViewController.m in Sources */,
